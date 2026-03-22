@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Age Calculator</h2>
+        <div class="input-group">
+            <label for="birthdate">Date of birth</label>
+            <input type="date" id="birthdate">
+        </div>
+        <button onclick="calculate()">Calculate age</button>
+        <div id="error-msg" class="error"></div>
+        <div id="result" style="display: none;">
+            <div class="stat-box">
+                <span id="res-years">0</span>
+                <label>Years</label>
+            </div>
+            <div class="stat-box">
+                <span id="res-months">0</span>
+                <label>Months</label>
+            </div>
+            <div class="stat-box">
+                <span id="res-days">0</span>
+                <label>Days</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html><

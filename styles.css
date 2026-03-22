@@ -1,0 +1,92 @@
+:root{
+    --primary: #6366f1;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #1e293b;
+}
+body{
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--text);
+}
+.container{
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+h2{
+    margin-top: 0;
+    font-weight: 700;
+}
+.input-group{
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+input[type="date"]{
+    padding: 0.8rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+input[type="date"]:focus{
+    border-color: var(--primary);
+}
+button{
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s opacity 0.2s;
+}
+button:active{
+    transform: scale(0.98);
+}
+button:hover{
+    opacity: 0.9;
+}
+#result{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.stat-box{
+    background-color: #f1f5f9;
+    padding: 1rem 0.5rem;
+    border-radius: 0.8rem;
+}
+.stat-box span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+.stat-box label{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #64748b;
+}
+.error{
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
